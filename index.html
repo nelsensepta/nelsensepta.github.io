@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Personal Web</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Heaeder -->
+      <header id="home">
+        <div class="left-header">
+          <span>Life between<strong>Code</strong>.
+          </span>
+          <p>Trying to be a part of Technology and Creativity.</p>
+        </div>
+        <img src="./img/mobile-app.svg" alt="Mediating Hero Image" />
+      </header>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-nav">
+      <nav>
+        <a href="#" class="title-nav">Septa Dev</a>
+        <ul id="menu-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="sosmed-menu">
+          <a href="" target="_blank"><i class="bx bxl-github"></i></a>
+          <!-- <a href="https://dribbble.com/dev_monkey" target="_blank"
+            ><i class="bx bxl-dribbble"></i
+          ></a> -->
+        </div>
+        <a id="burger" class="menu"
+          ><i class="bx bx-menu"></i></i
+        ></a>
+      </nav>
+
+      <div class="navigation__menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="left-about">
+          <img src="./img/2.jpg" alt="" />
+          <p>Nelsen Septa Henidar</p>
+          <label>Mobile Developer</label>
+        </div>
+        <div class="right-about">
+          <p>
+            I enjoyed learning Design and Software Developments such as HTML,
+            CSS, and Javascript. I studied on several platforms to improve and
+            practice my skills in Javascript.
+          </p>
+          <div class="btn-about">
+            <a href="" target="">Contact Me</a>
+            <a href="" target="">My GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills" id="skills">
+        <div class="left-skills">
+          <h2>My Skills</h2>
+          <div class="development">
+            <p>Development</p>
+            <label>HTML</label>
+            <label>CSS</label>
+            <label>Javascript</label>
+            <label>Bootstrap</label>
+            <label>SCSS</label>
+            <label>React Native</label>
+            <label>MERN</label>
+          </div>
+          <div class="on-learning">
+            <p>On Learning</p>
+            <label> Flutter </label>
+          </div>
+        </div>
+        <img src="./img/analysis.svg" alt="analysis" />
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <h2>See My Projects</h2>
+      <div class="container-card">
+        <div class="card">
+          <img src="./img/project/macbook7.jpg" alt="" />
+          <div class="desc-card">
+            <div class="skill-card">
+              <label>HTML</label>
+              <label>CSS</label>
+              <label>JS</label>
+            </div>
+            <a
+              href="#"
+              target=""
+              >Preview</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/project/macbook5.jpg" alt="" />
+          <div class="desc-card">
+            <div class="skill-card">
+              <label>HTML</label>
+              <label>CSS</label>
+              <label>JS</label>
+            </div>
+            <a href="#" target="">Preview</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./img/project/macbook6.jpg" alt="" />
+          <div class="desc-card">
+            <div class="skill-card">
+              <label>HTML</label>
+              <label>CSS</label>
+              <label>JS</label>
+            </div>
+            <a href="" target="">Preview</a>
+          </div>
+        </div>
+      </div>
+      <a href="" target="" class="see-more">See More</a>
+    </div>
+
+    <div class="container">
+      <!-- Contact -->
+      <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:kucirnob@gmail.com" target=""
+          >kucirnob@gmail.com</a
+        >
+        <p>
+          "Ooppss! Sorry... I don't have an input form yet. You can click the
+          button above to contact me via email."
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Coded with <i class="bx bxs-heart"></i> by <a href="#">NelsenSepta</a>.
+      </p>
+    </footer>
+
+    <!-- Script JS -->
+    <!-- Nav JS -->
+    <script>
+      const navSlide = () => {
+        const menuklik = document.getElementById("burger");
+        const active = document.querySelector(".navigation__menu");
+        const cross = document.querySelector(".bx-menu");
+
+        menuklik.addEventListener("click", function (event) {
+          active.classList.toggle("navigation__active");
+        });
+        menuklik.addEventListener("click", function (event) {
+          cross.classList.toggle("bx-x");
+        });
+      };
+
+      navSlide();
+    </script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Scroll to section -->
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              500,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
