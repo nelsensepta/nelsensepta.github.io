@@ -258,8 +258,9 @@ a.menu {
   flex-direction: column;
 }
 .card img {
-  width: 100%;
+  width: 250px;
   border-radius: 10px;
+  height: 250px;
 }
 .desc-card {
   display: flex;
