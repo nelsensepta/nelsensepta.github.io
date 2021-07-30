@@ -40,7 +40,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="sosmed-menu">
-          <a href="" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/nelsensepta" target="_blank"><i class="bx bxl-github"></i></a>
           <!-- <a href="https://dribbble.com/dev_monkey" target="_blank"
             ><i class="bx bxl-dribbble"></i
           ></a> -->
@@ -65,7 +65,7 @@
         <div class="left-about">
           <img src="./img/2.jpg" alt="" />
           <p>Nelsen Septa Henidar</p>
-          <label>Mobile Developer</label>
+          <label>Web Developer</label>
         </div>
         <div class="right-about">
           <p>
@@ -74,8 +74,8 @@
             practice my skills in Javascript.
           </p>
           <div class="btn-about">
-            <a href="" target="">Contact Me</a>
-            <a href="" target="">My GitHub</a>
+            <a href="#" target="">Contact Me</a>
+            <a href="https://github.com/nelsensepta" target="_blank">My GitHub</a>
           </div>
         </div>
       </div>
@@ -90,16 +90,13 @@
             <label>CSS</label>
             <label>Javascript</label>
             <label>Bootstrap</label>
-            <label>SCSS</label>
-            <label>React Native</label>
-            <label>MERN</label>
           </div>
           <div class="on-learning">
             <p>On Learning</p>
-            <label> Flutter </label>
+            <label> React JS </label>
           </div>
         </div>
-        <img src="./img/analysis.svg" alt="analysis" />
+        <img src="./img/web-dev.jpg" alt="analysis" />
       </div>
     </div>
 
@@ -108,7 +105,7 @@
       <h2>See My Projects</h2>
       <div class="container-card">
         <div class="card">
-          <img src="./img/project/macbook7.jpg" alt="" />
+          <img src="./img/project/mlbb-winrate.png" alt="" />
           <div class="desc-card">
             <div class="skill-card">
               <label>HTML</label>
@@ -116,8 +113,8 @@
               <label>JS</label>
             </div>
             <a
-              href="#"
-              target=""
+              href="https://nelsensepta.github.io/mlbb-winrate/index.html"
+              target="_blank"
               >Preview</a
             >
           </div>
@@ -130,7 +127,7 @@
               <label>CSS</label>
               <label>JS</label>
             </div>
-            <a href="#" target="">Preview</a>
+            <a href="#" target="_blank">Preview</a>
           </div>
         </div>
         <div class="card">
@@ -141,7 +138,7 @@
               <label>CSS</label>
               <label>JS</label>
             </div>
-            <a href="" target="">Preview</a>
+            <a href="" target="_blank">Preview</a>
           </div>
         </div>
       </div>
@@ -194,23 +191,15 @@
       $(document).ready(function () {
         // Add smooth scrolling to all links
         $("a").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
-
-            // Store hash
             var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $("html, body").animate(
               {
                 scrollTop: $(hash).offset().top,
               },
               500,
               function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
               }
             );

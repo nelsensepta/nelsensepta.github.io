@@ -8,7 +8,6 @@
   --medium-dark: #5e5e5e;
   --dark: #2b2b2b;
   --lighten: #979797;
-
   --padding-mobile: 2rem;
 }
 
@@ -278,6 +277,8 @@ a.menu {
 }
 .card {
   margin-top: 1.7rem;
+  width: 250px;
+  height: 300px;
 }
 .card:nth-child(3) {
   margin-bottom: 3rem;
