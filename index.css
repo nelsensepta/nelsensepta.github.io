@@ -257,23 +257,34 @@ a.menu {
   display: flex;
   flex-direction: column;
 }
-.card img {
-  width: 250px;
-  border-radius: 10px;
-  height: 250px;
+.card-img {
   object-fit: cover;
+  border-radius: 0.75rem;
+  height: 210px;
 }
+
+.img-alt {
+  width: 250px;
+  height: 210px;
+  transition: 0.4s;
+  border-radius: 0.75rem;
+}
+.img-alt:hover {
+  transform: scale(1.1);
+  border-radius: 0.75rem;
+}
+
+.card-img {
+  overflow: hidden;
+}
+
 .desc-card {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0 1rem;
 }
-.skill-card {
-  flex-basis: 40%;
-  display: flex;
-  justify-content: space-between;
-}
+
 .desc-card a {
   color: var(--dark);
 }
