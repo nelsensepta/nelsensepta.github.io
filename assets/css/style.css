@@ -288,9 +288,9 @@ input {
   transform: rotate(29deg);
 }
 
-a.menu {
+/* a.menu {
   cursor: pointer;
-}
+} */
 
 .nav__sosmed a i.bxl-github:hover {
   color: var(--medium-dark);
