@@ -140,7 +140,7 @@ input {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 0;
+  padding: 0 1rem;
 }
 
 .grid {
@@ -305,13 +305,13 @@ input {
 
 /* ======================= About ======================= */
 .about__container {
-  position: relative;
   min-height: 100vh;
   display: flex;
   justify-items: center;
   flex-direction: column;
 }
 .about__info {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,7 +320,7 @@ input {
 .about__sosmed {
   position: absolute;
   display: flex;
-  left: 0;
+  left: 5rem;
   top: 4rem;
   flex-direction: column;
   justify-items: center;
@@ -426,12 +426,12 @@ input {
 
 /* ==== Projects */
 .projects__container {
-  margin-top: var(--m-4);
-  margin-bottom: var(--m-4);
+  /* margin-top: var(--m-4);
+  margin-bottom: var(--m-4); */
   display: grid;
   grid-gap: var(--m-1-25);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 210px;
+  grid-auto-rows: 250px;
   grid-auto-flow: dense;
 }
 .wide {
@@ -530,9 +530,15 @@ a {
   text-align: center;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header__info p {
     font-size: var(--h2-font-size);
+  }
+  .about__sosmed {
+    left: 1.5rem;
+  }
+  .projects .see-more {
+    margin-top: var(--m-3);
   }
 }
 
@@ -572,6 +578,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .projects .see-more {
+    margin-top: var(--m-4);
   }
 }
 
