@@ -616,7 +616,12 @@ a {
   .nav__list {
     display: flex;
     flex-basis: 35%;
+    transition: 0.5s;
     justify-content: space-between;
+  }
+  .nav__list li :hover {
+    text-decoration: underline;
+    color: var(--title-color);
   }
 
   .nav__icon-youtube {
